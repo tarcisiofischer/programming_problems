@@ -3,8 +3,8 @@
 
 class Triangle {
 private:
-	int* _triangle_structure;
 	int _depth;
+	int* _triangle_structure;
 	bool _should_cleanup;
 
 public:
