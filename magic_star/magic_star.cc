@@ -29,9 +29,9 @@ void solve() {
 	if(next_circle_index == 7 && !rule2()) return;
 	if(next_circle_index == 9 && !rule3()) return;
 	if(next_circle_index == 11 && !rule4()) return;
-    if(rule1() && rule2() && rule3() &&
-       rule4() && rule5() && rule6()) {
-		for(int i = 0; i < 12; i++) std::cout << star[i] << ", ";
+	if(rule1() && rule2() && rule3() && rule4() && rule5() && rule6()) {
+		for(int i = 0; i < 12; i++)
+			std::cout << star[i] << ", ";
 		std::cout << std::endl;
 		total++;
 		return;
