@@ -67,7 +67,9 @@ int find_max(int* from, int size) {
 int max_path(Triangle* triangle) {
 	Triangle* partial_sum_triangle = triangle_sum(triangle);
 	int depth = partial_sum_triangle->depth();
-	return find_max(partial_sum_triangle->get_row(depth), depth);
+	int max = find_max(partial_sum_triangle->get_row(depth), depth);
+	delete partial_sum_triangle;
+	return max;
 }
 
 int main() {
